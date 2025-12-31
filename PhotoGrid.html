@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos Grid</title>
+    <style>
+        body{
+            background-color: #cc6969;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto) ;
+            gap: 5px;
+            max-width: 600px;
+            margin: auto;
+            justify-content: center;
+        }
+
+        .grid-container img{
+            padding: 3px;
+            align-items: center;
+            height: auto;
+            width: 200px;
+            border-radius: 5px;
+            border: 2px solid black;
+           
+        }
+
+        h2{
+            margin: 10px;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+            background-color: #e2f64d;
+            color: rgb(63, 18, 140);
+            cursor: pointer;
+        }
+
+        h2:hover{
+            color: aqua;
+        }
+
+        .i11{
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Nature Grid</h2>
+    <div class="grid-container">
+        <img src="img/1.jpeg" alt="i1" class="i11" style="height: 300px;">
+        <img src="img/2.jpeg" alt="i2" style="height: 300px;">
+        <img src="img/3.jpg" alt="i3">
+        <img src="img/5.jpg" alt="i4">
+        <img src="img/4.jpg" alt="i5" style="width: 200px; height:300px;">
+    </div>
+</body>
+</html>

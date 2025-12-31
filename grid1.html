@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid 1</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #100100;
+      }
+      .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+        background: black;
+        margin: 20px auto;
+        padding: 10px;
+        width: 600px;
+        border: 5px solid rgb(247, 39, 80);
+      }
+      
+      .item {
+        background: white;
+        text-align: center;
+        padding: 10px;
+        border: 2px solid green;
+        font-weight: bold;
+      }
+      .home{
+        grid-column:span 1;
+      }
+      .about{
+        grid-column: span 1;
+      }
+      .services{
+        grid-column: span 1;
+      }
+      .contact{
+        grid-column: span 1;
+      }
+      .laravel{
+        grid-column: span 1;
+      }
+      .nodejs{
+        grid-column: span 2;
+      }
+      .vuejs{
+        grid-column: span 1;
+      }
+      .dm{
+        grid-column: span 1;
+      }
+        .app { grid-column: span 1; }
+        .seo { grid-column: span 1; }
+        .hacking { grid-column: span 1; }
+
+        .python { grid-column: span 1; }
+        .java { grid-column: span 2; }
+        .c { grid-column: span 1; }
+
+        .server { grid-column: span 1; }
+        .aws { grid-column: span 1; }
+        .css { grid-column: span 2; }
+
+        .cpp   { grid-column: span 1; }
+        .html { grid-column: span 1; }     
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item home">Home</div>
+      <div class="item about">About</div>
+      <div class="item services">Services</div>
+      <div class="item contact">Contact Us</div>
+
+      <div class="item laravel">Laravel</div>
+      <div class="item nodejs">Node.js</div>
+      <div class="item vuejs">Vue.js</div>
+
+      <div class="item dm">DM</div>
+      <div class="item app">App</div>
+      <div class="item seo">SEO</div>
+      <div class="item hacking">Hacking</div>
+
+      <div class="item python">Python</div>
+      <div class="item java">Java</div>
+      <div class="item c">C</div>
+
+      <div class="item server">Server</div>
+      <div class="item cpp">C++</div>
+
+      <div class="item aws">AWS</div>
+      <div class="item css">CSS</div>
+      <div class="item html">HTML</div>
+    </div>
+  </body>
+</html>
